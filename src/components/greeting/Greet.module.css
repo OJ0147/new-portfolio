@@ -1,0 +1,27 @@
+.greet__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 200px;
+    display: none;
+}
+.greet__wrap p{
+    font-size: 3rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.greet__wrap img{
+    width: 4rem;
+    height: 4rem;
+}
+
+@media only screen and (max-width: 600px){
+    .greet__wrap p{
+        font-size: 2rem;
+    }
+    .greet__wrap img{
+        width: 3rem;
+        height: 3rem;
+    }
+}

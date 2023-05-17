@@ -1,0 +1,68 @@
+aside{
+    width: 100%;
+    /* min-height: calc(100vh - 7rem); */
+    min-height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    padding-top: 6rem;
+}
+aside ul{
+    padding-left: 0;
+}
+
+aside ul li a{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 1.5rem 0;
+}
+aside .socials{
+    margin-bottom: 3rem;
+}
+
+aside .socials li a{
+    justify-content: space-between;
+    width: 135px;
+    background-color: #000000a8;
+    color: #fff;
+    padding: 1.5rem;
+    transform: translateX(-70px);
+    transition: all 0.5s ease-in-out;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;  
+}
+aside .socials li .linkedin{
+    background-color: var(--solid-blue);
+}
+aside .socials li .instagram{
+    background: var(--insta-gradient)
+}
+aside .socials li a small{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+aside .socials li a:hover{
+    transform: translateX(0);
+}
+
+
+aside .routes li a .routes__icon{
+    font-size: 1.8rem;
+    color: #333;
+}
+aside .routes li a .routes__icon{
+    margin-left: 20px;
+    color: var(--deep-blue);
+}
+aside .routes li a .routes__name{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--deep-blue);
+    
+}
+
+aside .routes li a:global.active{
+    background: var(--trans-blue);
+    border-left: 3px solid var(--border-blue);
+    
+}

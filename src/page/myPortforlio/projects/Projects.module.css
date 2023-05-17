@@ -1,0 +1,22 @@
+.projects{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.projects-container section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+.project-wrapper{
+    max-width: 600px;
+    min-height: 300px;
+}
+.image-wrap{
+    width: 100%;
+    height: 100%;
+}
+.image-wrap img{
+    width: 100%;
+    height: 100%;
+}

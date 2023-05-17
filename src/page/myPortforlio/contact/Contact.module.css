@@ -1,0 +1,224 @@
+
+.contact-wrapper{
+    max-width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 3px 10px rgba(29, 138, 25, 0.4) ;
+}
+
+.form-control{
+    flex-basis: 60%;
+    height: auto;
+    padding: 30px 50px 50px ;
+    background: #fff;
+}
+.contact-info{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    padding: 30px 20px;
+    background: linear-gradient(rgba(29, 138, 25, 0.4), rgba(35, 187, 29, 0.8)), url(../../../assets/map.jpg);
+    
+}
+.contact-info address div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    color: #333;
+    
+}
+.contact-info address small a, .contact-info address small{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+}
+.contact-info address div span{
+    display: grid;
+    place-content: center;
+    background: #fca510;
+    color: #333;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 50%;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #333;
+    transition: all 0.5s ease-in;
+}
+.socials a:hover{
+    color: #fca510;
+    transform: scale(1.2);
+}
+.form-control h2, .contact-info h2 {
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    margin: 15px;
+}
+
+
+.form-control form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form-control form input{
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid var(--btn-blue);
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+
+}
+.form-control form input::placeholder, 
+.form-control form textarea::placeholder{
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Amatic SC', cursive;
+    color: var(--btn-blue );
+}
+.form-control form input:focus, 
+.form-control form textarea:focus{
+    outline:3px solid var(--trans-blue );
+}
+.form-control form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px 5px;
+    margin-bottom: 30px;
+    resize: none;
+    border: 1px solid var(--btn-blue);
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+}
+.cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+    background: var(--cool-gradient);
+    color: ghostwhite;
+    overflow: hidden;
+}
+  
+
+.cssbuttons-io span {
+    position: relative;
+    font-size: 1.8rem;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+}
+  
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+  
+.cssbuttons-io::before {
+    content: "";
+    background: var(--btn-blue);
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+  
+.cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+  
+.cssbuttons-io:active {
+    transform: scale(0.95);
+}
+  
+
+
+@media only screen and (max-width:900px){
+    .contact-wrapper{
+        max-width: 90%;
+    }
+   
+}
+@media only screen and (max-width:700px){
+    .form-control{
+        padding: 35px;
+    }
+    .form-control form input{
+        margin-bottom: 10px;
+    }
+    .contact-wrapper{
+        flex-direction: column;
+        margin: 45px 20px;
+    }
+
+}
+@media only screen and (max-width:360px){
+    .contact-wrapper{
+        max-width: 95%;
+        margin: 0 auto
+    }
+
+
+}
+@media only screen and (max-width:320px){
+    .form-control{
+        padding: 25px;
+    }
+    .form-control form input{
+        margin-bottom: 5px;
+    }
+    .form-control form textarea{
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+
+}
+@media only screen and (max-width:320px){
+    .form-control{
+        padding: 25px;
+    }
+    .form-control form input{
+        margin-bottom: 5px;
+    }
+    .form-control form textarea{
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+  

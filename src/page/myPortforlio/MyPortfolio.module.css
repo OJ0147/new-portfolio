@@ -1,0 +1,114 @@
+.container{
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+.container nav{
+    max-width: 100vw;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    background: #fff;
+    
+}
+.container nav .nav-content{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; 
+}
+.container nav div{
+    display: flex;
+    align-items: center;
+}
+
+.container nav h2{
+    font-size: 4.5rem;
+    font-family: 'Lobster', cursive;
+    background: var(--cool-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
+}
+
+.page-container{
+    display: flex;
+    gap: 3.5rem;
+    max-width: 100vw;
+    height: calc(100vh - 5rem);
+}
+
+.sidebar-wrapper{
+    min-width: 250px;
+    flex-basis: 20%;
+    height: calc(100vh -7rem );
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    z-index: 100;
+}
+.page-content{
+    flex-basis: 80%;
+    height: calc(100vh - 7.2rem);
+    background-color: #ffff;
+    margin-top: 2rem;
+    padding: 2rem 2rem 0;
+}
+
+@media only screen and (min-width:960px){
+    .container nav .menu-button{
+        display: none;
+    }
+}
+@media only screen and (max-width: 960px){
+    .container{
+        height: 100%
+    }
+    .sidebar-wrapper{
+        position: absolute;
+        top: 7rem;
+        left: -300px;
+        bottom: 0;
+        z-index: 100;
+        transition: all 0.3s ease-in;
+    }
+    .active-sidebar{
+        left: 0;
+    }
+    .page-container{
+        height: 100%;
+    }
+    .page-content{
+        flex-basis: 100%;
+        height: 100%;
+        padding: 100px 0 200px;
+
+    }
+
+
+}
+@media only screen and (min-height:1104px){
+    .page-content{
+        padding: 215px 0;
+    }
+}
+@media only screen and (max-width: 600px){
+    .container nav{
+        padding: 0 2rem;
+    }
+    .container nav h2{
+        font-size: 2.8rem;
+  
+    }
+    .container nav .nav-content{
+        gap: 0.6rem; 
+    }
+    .page-content{
+        padding: 0 ;
+        margin: inherit auto;
+    }
+}
